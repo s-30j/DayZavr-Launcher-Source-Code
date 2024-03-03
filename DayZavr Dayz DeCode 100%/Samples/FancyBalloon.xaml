@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Samples.FancyBalloon" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:tb="http://www.hardcodet.net/taskbar" x:Name="me" Width="240" MinHeight="122" xmlns:samples="clr-namespace:Samples;assembly=DayZavr Dayz">
+  <FrameworkElement.Resources>
+    <ResourceDictionary>
+      <Storyboard x:Key="FadeIn">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
+          <SplineDoubleKeyFrame KeyTime="00:00:01" Value="0.95" />
+          <SplineDoubleKeyFrame KeyTime="00:00:03" Value="0.95" />
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+      <Storyboard x:Key="HighlightCloseButton">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgClose" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.4" />
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1" />
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+      <Storyboard x:Key="FadeCloseButton">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgClose" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1" />
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.4" />
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+      <Storyboard x:Key="FadeBack">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1" />
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1" />
+        </DoubleAnimationUsingKeyFrames>
+      </Storyboard>
+      <Storyboard x:Key="FadeOut">
+        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Opacity)">
+          <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1" />
+          <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.2" />
+        </DoubleAnimationUsingKeyFrames>
+        <!--Unknown connection ID: 2-->
+      </Storyboard>
+    </ResourceDictionary>
+  </FrameworkElement.Resources>
+  <FrameworkElement.Triggers>
+    <EventTrigger RoutedEvent="tb:TaskbarIcon.BalloonShowing">
+      <BeginStoryboard Name="FadeIn_BeginStoryboard" Storyboard="{StaticResource FadeIn}">
+        <!--Unknown connection ID: 3-->
+      </BeginStoryboard>
+    </EventTrigger>
+    <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="imgClose">
+      <BeginStoryboard Name="HighlightCloseButton_BeginStoryboard" Storyboard="{StaticResource HighlightCloseButton}">
+        <!--Unknown connection ID: 4-->
+      </BeginStoryboard>
+    </EventTrigger>
+    <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="imgClose">
+      <BeginStoryboard Name="FadeCloseButton_BeginStoryboard" Storyboard="{StaticResource FadeCloseButton}">
+        <!--Unknown connection ID: 5-->
+      </BeginStoryboard>
+    </EventTrigger>
+    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+      <StopStoryboard BeginStoryboardName="FadeIn_BeginStoryboard" />
+      <BeginStoryboard Name="FadeBack_BeginStoryboard1" Storyboard="{StaticResource FadeBack}">
+        <!--Unknown connection ID: 6-->
+      </BeginStoryboard>
+    </EventTrigger>
+    <EventTrigger RoutedEvent="tb:TaskbarIcon.BalloonClosing">
+      <BeginStoryboard Name="FadeOut_BeginStoryboard" Storyboard="{StaticResource FadeOut}">
+        <!--Unknown connection ID: 7-->
+      </BeginStoryboard>
+    </EventTrigger>
+  </FrameworkElement.Triggers>
+  <Grid Name="grid">
+    <Border HorizontalAlignment="Stretch" Margin="5,5,5,5" BorderThickness="1,1,1,1">
+      <Border.BorderBrush>
+        <ImageBrush ImageSource="/DayZavr Dayz;component/design/left.png" />
+      </Border.BorderBrush>
+      <Border.Background>
+        <ImageBrush ImageSource="/DayZavr Dayz;component/design/9225cf47732fbf8f62421e98b75aa52c.jpg" />
+      </Border.Background>
+      <UIElement.Effect>
+        <DropShadowEffect Color="#FF747474" Direction="320" />
+      </UIElement.Effect>
+    </Border>
+    <Image HorizontalAlignment="Left" Margin="10,22,0,0" Width="52" Source="/DayZavr Dayz;component/design/32_3.ico" Stretch="Fill" Height="51" VerticalAlignment="Top" />
+    <TextBlock Name="TextBallon" Margin="72,49,10,10" Foreground="#FFECAD25" TextWrapping="Wrap" Text="{Binding Text, ElementName=me, Mode=Default}">
+      <Run Text="This is a user control. The animation uses the attached " />
+      <Run Text=" " />
+      <Run FontStyle="Italic" FontWeight="Bold" Text="BalloonShowing " />
+      <Run Text=" " />
+      <Run Text="event." />
+      <!--Unknown connection ID: 9-->
+    </TextBlock>
+    <Path Fill="#FFFFFFFF" Stretch="Fill" Margin="72,38.2,34,0" VerticalAlignment="Top" Height="1" Data="M26,107 L220.04123,107" SnapsToDevicePixels="True">
+      <Shape.Stroke>
+        <LinearGradientBrush EndPoint="0.973,0.5" StartPoint="0.005,0.5">
+          <GradientStop Color="#00ECAD25" Offset="1" />
+          <GradientStop Color="#87ECAD25" Offset="0" />
+        </LinearGradientBrush>
+      </Shape.Stroke>
+    </Path>
+    <TextBlock Margin="72,10,10,0" VerticalAlignment="Top" Height="23.2" TextWrapping="Wrap" Foreground="#FFECAD25" FontWeight="Bold" Text="{Binding BalloonText, ElementName=me, Mode=Default}" />
+    <Image Name="imgClose" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="16" Height="16" Source="/Design/Close.png" Stretch="Fill" Opacity="0.4" ToolTip="Close Balloon">
+      <!--Unknown connection ID: 10-->
+    </Image>
+    <!--Unknown connection ID: 8-->
+  </Grid>
+  <!--Unknown connection ID: 1-->
+</UserControl>

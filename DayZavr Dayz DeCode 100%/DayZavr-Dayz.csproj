@@ -1,0 +1,123 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>DayZavr Dayz</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net48</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="design\arrow.png" />
+    <None Remove="design\inventar.png" />
+    <None Remove="fontandicons\fontm\roboto-black.ttf" />
+    <None Remove="design\listservers-206.png" />
+    <None Remove="design\right.png" />
+    <None Remove="design\layer-20lstwiew.png" />
+    <None Remove="design\fone.png" />
+    <None Remove="design\-d0-ba-d0-be-d1-80-d0-be-d0-b1-d0-ba-d0-b8.png" />
+    <None Remove="design\-d1-81-d0-b5-d1-822.png" />
+    <None Remove="fontandicons\fontn\days2.ttf" />
+    <None Remove="design\silver.png" />
+    <None Remove="design\-d0-bc-d0-b0-d1-88-d0-b8-d0-bd-d0-b0.png" />
+    <None Remove="design\bronze.png" />
+    <None Remove="design\weapon.png" />
+    <None Remove="design\gold.png" />
+    <None Remove="design\logopr.png" />
+    <None Remove="messagebox\warning.png" />
+    <None Remove="design\base.png" />
+    <None Remove="design\left.png" />
+    <None Remove="design\fonlauncher.jpg" />
+    <None Remove="design\shop.png" />
+    <None Remove="design\medic.png" />
+    <None Remove="design\server.png" />
+    <None Remove="design\32_3.png" />
+    <None Remove="design\32_3.ico" />
+    <None Remove="design\2.ico" />
+    <None Remove="design\2.png" />
+    <None Remove="design\1.png" />
+    <None Remove="design\3.png" />
+    <None Remove="design\p.png" />
+    <None Remove="design\gasmask.png" />
+    <None Remove="design\close.png" />
+    <None Remove="design\9225cf47732fbf8f62421e98b75aa52c.jpg" />
+    <None Remove="design\helicopter.png" />
+    <EmbeddedResource Include="design\arrow.png" LogicalName="design/arrow.png" />
+    <EmbeddedResource Include="design\inventar.png" LogicalName="design/inventar.png" />
+    <EmbeddedResource Include="fontandicons\fontm\roboto-black.ttf" LogicalName="fontandicons/fontm/roboto-black.ttf" />
+    <EmbeddedResource Include="design\listservers-206.png" LogicalName="design/listservers%206.png" />
+    <EmbeddedResource Include="design\right.png" LogicalName="design/right.png" />
+    <EmbeddedResource Include="design\layer-20lstwiew.png" LogicalName="design/layer%20lstwiew.png" />
+    <EmbeddedResource Include="design\fone.png" LogicalName="design/fone.png" />
+    <EmbeddedResource Include="design\-d0-ba-d0-be-d1-80-d0-be-d0-b1-d0-ba-d0-b8.png" LogicalName="design/%d0%ba%d0%be%d1%80%d0%be%d0%b1%d0%ba%d0%b8.png" />
+    <EmbeddedResource Include="design\-d1-81-d0-b5-d1-822.png" LogicalName="design/%d1%81%d0%b5%d1%822.png" />
+    <EmbeddedResource Include="fontandicons\fontn\days2.ttf" LogicalName="fontandicons/fontn/days2.ttf" />
+    <EmbeddedResource Include="design\silver.png" LogicalName="design/silver.png" />
+    <EmbeddedResource Include="design\-d0-bc-d0-b0-d1-88-d0-b8-d0-bd-d0-b0.png" LogicalName="design/%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%b0.png" />
+    <EmbeddedResource Include="design\bronze.png" LogicalName="design/bronze.png" />
+    <EmbeddedResource Include="design\weapon.png" LogicalName="design/weapon.png" />
+    <EmbeddedResource Include="design\gold.png" LogicalName="design/gold.png" />
+    <EmbeddedResource Include="design\logopr.png" LogicalName="design/logopr.png" />
+    <EmbeddedResource Include="messagebox\warning.png" LogicalName="messagebox/warning.png" />
+    <EmbeddedResource Include="design\base.png" LogicalName="design/base.png" />
+    <EmbeddedResource Include="design\left.png" LogicalName="design/left.png" />
+    <EmbeddedResource Include="design\fonlauncher.jpg" LogicalName="design/fonlauncher.jpg" />
+    <EmbeddedResource Include="design\shop.png" LogicalName="design/shop.png" />
+    <EmbeddedResource Include="design\medic.png" LogicalName="design/medic.png" />
+    <EmbeddedResource Include="design\server.png" LogicalName="design/server.png" />
+    <EmbeddedResource Include="design\32_3.png" LogicalName="design/32_3.png" />
+    <EmbeddedResource Include="design\32_3.ico" LogicalName="design/32_3.ico" />
+    <EmbeddedResource Include="design\2.ico" LogicalName="design/2.ico" />
+    <EmbeddedResource Include="design\2.png" LogicalName="design/2.png" />
+    <EmbeddedResource Include="design\1.png" LogicalName="design/1.png" />
+    <EmbeddedResource Include="design\3.png" LogicalName="design/3.png" />
+    <EmbeddedResource Include="design\p.png" LogicalName="design/p.png" />
+    <EmbeddedResource Include="design\gasmask.png" LogicalName="design/gasmask.png" />
+    <EmbeddedResource Include="design\close.png" LogicalName="design/close.png" />
+    <EmbeddedResource Include="design\9225cf47732fbf8f62421e98b75aa52c.jpg" LogicalName="design/9225cf47732fbf8f62421e98b75aa52c.jpg" />
+    <EmbeddedResource Include="design\helicopter.png" LogicalName="design/helicopter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoTorrent.Client">
+      <HintPath>..\DayZavr Dayz EnCode\MonoTorrent.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTorrent">
+      <HintPath>..\DayZavr Dayz EnCode\MonoTorrent.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\DayZavr Dayz EnCode\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Xml" />
+    <Reference Include="DiscordRPC">
+      <HintPath>..\DayZavr Dayz EnCode\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Hardcodet.Wpf.TaskbarNotification">
+      <HintPath>..\DayZavr Dayz EnCode\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="LoadingIndicators.WPF">
+      <HintPath>..\DayZavr Dayz EnCode\LoadingIndicators.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="WindowsFirewallHelper">
+      <HintPath>..\DayZavr Dayz EnCode\WindowsFirewallHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF">
+      <HintPath>..\DayZavr Dayz EnCode\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Winservr">
+      <HintPath>..\DayZavr Dayz EnCode\System.Windows.Winservr.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

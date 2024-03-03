@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="SERVER.Shopset" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:fa="http://schemas.fontawesome.io/icons/" x:Name="SHOPLOOTControll" Width="433.333" Height="335" xmlns:server="clr-namespace:SERVER;assembly=DayZavr Dayz" Foreground="{x:Null}">
+  <Border Name="Border2" BorderThickness="2" Margin="0,0,0,5">
+    <Grid Margin="-2,0,-2,-2">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="439" />
+      </Grid.RowDefinitions>
+      <Image Source="/DayZavr Dayz;component/design/fone.png" Margin="0,-9,0,111" Opacity="0.4" Stretch="Fill">
+        <UIElement.Effect>
+          <BlurEffect KernelType="Gaussian" Radius="1" RenderingBias="Quality" />
+        </UIElement.Effect>
+      </Image>
+      <Grid Name="GNAME" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="433" Margin="0,0,0,149">
+        <fa:ImageAwesome Name="ImSH" Icon="Server" Margin="10,67,0,0" Stretch="Fill" Width="127" Height="213" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{x:Null}">
+          <!--Unknown connection ID: 4-->
+        </fa:ImageAwesome>
+        <Label Name="LNameSet" Content="..." Margin="10,5,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontSize="14" Height="24" HorizontalAlignment="Left" Width="284">
+          <!--Unknown connection ID: 5-->
+        </Label>
+        <Border Name="GTXTD" BorderThickness="1" Height="213" Margin="142,67,10,0" VerticalAlignment="Top">
+          <TextBlock Name="TxtDescr" Margin="-1,-1,0,-1" FontFamily="Roboto Light" TextAlignment="Left" TextWrapping="Wrap" Foreground="#FFBBBBBB" FontSize="10" Padding="0,0,5,0">
+            <!--Unknown connection ID: 7-->
+          </TextBlock>
+          <!--Unknown connection ID: 6-->
+        </Border>
+        <Label Name="LPrice" Content="1000 rub." Margin="339,5,10,118" FontFamily="Roboto" FontSize="14" Foreground="#FFFF4904" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Right">
+          <!--Unknown connection ID: 8-->
+        </Label>
+        <Label Name="LTXTPRICE" Content="Price : " Margin="0,5,83,0" VerticalAlignment="Top" FontFamily="Roboto" FontSize="14" Height="24" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Right">
+          <!--Unknown connection ID: 9-->
+        </Label>
+        <Label Name="LPriceDiscount" Content="1000 rub." Margin="0,34,284,0" FontFamily="Roboto" Foreground="#FFFF4904" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Right" Width="91" Height="21" FontSize="10" Visibility="Hidden">
+          <Control.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/left.png" />
+          </Control.Background>
+          <Control.BorderBrush>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+          </Control.BorderBrush>
+          <!--Unknown connection ID: 10-->
+        </Label>
+        <Label Name="LTXTPDISCOUNT" Content="Price : " Margin="10,34,0,0" VerticalAlignment="Top" FontFamily="Roboto" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="21" FontSize="10" Width="48" Visibility="Hidden">
+          <Control.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/right.png" />
+          </Control.Background>
+          <!--Unknown connection ID: 11-->
+        </Label>
+        <!--Unknown connection ID: 3-->
+      </Grid>
+      <Button Name="BBuy" Content="Приобрести" Width="108" Margin="0,295,10,121" HorizontalAlignment="Right" FontFamily="Gilroy" FontSize="11">
+        <!--Unknown connection ID: 12-->
+      </Button>
+    </Grid>
+    <!--Unknown connection ID: 2-->
+  </Border>
+  <!--Unknown connection ID: 1-->
+</UserControl>

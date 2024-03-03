@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="SERVER.SControll" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:fa="http://schemas.fontawesome.io/icons/" xmlns:WPF="clr-namespace:LoadingIndicators.WPF;assembly=LoadingIndicators.WPF" x:Name="NewsControll" Width="900" Height="147.646" xmlns:server="clr-namespace:SERVER;assembly=DayZavr Dayz" Foreground="{x:Null}">
+  <Border Name="Border2" BorderThickness="2" Margin="0,0,19,5" CornerRadius="3">
+    <Grid Margin="-2,0,-2,-2">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="439" />
+      </Grid.RowDefinitions>
+      <Image Source="/DayZavr Dayz;component/design/fone.png" Margin="0,0,0,298" Stretch="Fill" Opacity="0.6">
+        <UIElement.Effect>
+          <BlurEffect KernelType="Gaussian" Radius="3" RenderingBias="Quality" />
+        </UIElement.Effect>
+      </Image>
+      <StackPanel Margin="0,0,0,298">
+        <Grid Name="GS" Height="138">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="754" />
+            <ColumnDefinition Width="146" />
+          </Grid.ColumnDefinitions>
+          <Border Name="BORDER" Background="#FF232323" Grid.ColumnSpan="2" Opacity="0.06">
+            <!--Unknown connection ID: 4-->
+          </Border>
+          <Grid Name="GNAME" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="754">
+            <Border Name="BImg" Margin="6,7,594,7" CornerRadius="2">
+              <Border.Background>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.Background>
+              <fa:ImageAwesome Name="ImS" Icon="Server" Width="144" HorizontalAlignment="Left" Margin="5,5,0,4" Stretch="Fill" Foreground="{x:Null}">
+                <!--Unknown connection ID: 7-->
+              </fa:ImageAwesome>
+              <!--Unknown connection ID: 6-->
+            </Border>
+            <Border Name="BNAMEPLAYERS_GStats" BorderThickness="1" Height="59" Margin="165,72,6,0" VerticalAlignment="Top">
+              <Border.BorderBrush>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/left.png" />
+              </Border.BorderBrush>
+              <TextBlock Name="TxtName_GStats" Margin="-1" FontFamily="Roboto Light" TextAlignment="Center" TextWrapping="Wrap" Foreground="#FFFBA947" Text="..." FontSize="9" Padding="0,0,5,0">
+                <!--Unknown connection ID: 9-->
+              </TextBlock>
+              <!--Unknown connection ID: 8-->
+            </Border>
+            <Border Name="BtxtNAMEPLAYERS_GStats" BorderThickness="1" Height="22" Margin="165,50,471,0" VerticalAlignment="Top">
+              <Border.BorderBrush>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.BorderBrush>
+              <Label Name="TextOnlain_GStats" Content="Игроки онлайн :" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="10" Height="22" Foreground="#FFECECEC" HorizontalAlignment="Left" Background="{x:Null}">
+                <!--Unknown connection ID: 11-->
+              </Label>
+              <!--Unknown connection ID: 10-->
+            </Border>
+            <Border Name="BtxtTimeRestart_GStats" BorderThickness="1" Height="31" Margin="298,35,241,0" VerticalAlignment="Top" CornerRadius="3">
+              <Border.BorderBrush>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/9225cf47732fbf8f62421e98b75aa52c.jpg" />
+              </Border.BorderBrush>
+              <Border.Background>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.Background>
+              <Label Name="TxtTimeRestart_GStats" Content="Время до рестарта :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="10" Foreground="#FFECECEC" Background="{x:Null}">
+                <!--Unknown connection ID: 13-->
+              </Label>
+              <!--Unknown connection ID: 12-->
+            </Border>
+            <Border Name="BPING" BorderThickness="1" Height="31" Margin="639,35,10,0" VerticalAlignment="Top" CornerRadius="3">
+              <Border.BorderBrush>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/9225cf47732fbf8f62421e98b75aa52c.jpg" />
+              </Border.BorderBrush>
+              <Border.Background>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.Background>
+              <Grid Name="GPING">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="23*" />
+                  <ColumnDefinition Width="36*" />
+                </Grid.ColumnDefinitions>
+                <fa:ImageAwesome Icon="wifi" Width="15" Foreground="#FFEBEBEB" HorizontalAlignment="Left" Margin="4,7,0,7" />
+                <Label Name="LPING" Content="69" Margin="0,2" VerticalAlignment="Center" FontFamily="Roboto" FontSize="14" VerticalContentAlignment="Center" Grid.Column="1" Height="25">
+                  <!--Unknown connection ID: 16-->
+                </Label>
+                <!--Unknown connection ID: 15-->
+              </Grid>
+              <!--Unknown connection ID: 14-->
+            </Border>
+            <Border Name="BPLAYER" BorderThickness="1" Height="31" Margin="518,35,120,0" VerticalAlignment="Top" CornerRadius="3">
+              <Border.BorderBrush>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/9225cf47732fbf8f62421e98b75aa52c.jpg" />
+              </Border.BorderBrush>
+              <Border.Background>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.Background>
+              <Grid Name="GPLAYER">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="23*" />
+                  <ColumnDefinition Width="67*" />
+                </Grid.ColumnDefinitions>
+                <fa:ImageAwesome Icon="Users" Width="15" Foreground="#FFEBEBEB" HorizontalAlignment="Left" Margin="4,7,0,7" />
+                <Label Name="LPLAYER" Content="16/60" Margin="1,2,0,2" VerticalAlignment="Center" FontFamily="Roboto" FontSize="14" VerticalContentAlignment="Center" Grid.Column="1" Height="25">
+                  <!--Unknown connection ID: 19-->
+                </Label>
+                <!--Unknown connection ID: 18-->
+              </Grid>
+              <!--Unknown connection ID: 17-->
+            </Border>
+            <!--Unknown connection ID: 5-->
+          </Grid>
+          <Label Name="LNAME" Content="Vortex dayz server" HorizontalAlignment="Stretch" VerticalAlignment="Top" FontSize="14" Height="35" HorizontalContentAlignment="Center" Margin="165,0,29,0" Grid.ColumnSpan="2">
+            <!--Unknown connection ID: 20-->
+          </Label>
+          <Grid Name="GBUT" Column="1" VerticalAlignment="Top" Margin="10,69,29,0">
+            <Button Name="BDiscord" HorizontalAlignment="Right" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+              <Border CornerRadius="3" BorderThickness="1">
+                <Border.Background>
+                  <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+                </Border.Background>
+                <Grid Height="23" Width="23">
+                  <fa:ImageAwesome Icon="Vk" Foreground="#FFEBEBEB" HorizontalAlignment="Center" VerticalAlignment="Center" Height="17" Width="17" Source="/DayZavr Dayz;component/design/2.ico" />
+                </Grid>
+              </Border>
+              <!--Unknown connection ID: 22-->
+            </Button>
+            <Button Name="BShop" HorizontalAlignment="Left" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+              <Border CornerRadius="3" BorderThickness="1">
+                <Border.Background>
+                  <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+                </Border.Background>
+                <Grid Height="24" Width="24">
+                  <fa:ImageAwesome Icon="ShoppingCart" Foreground="#FFEBEBEB" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14" Width="15" />
+                </Grid>
+              </Border>
+              <!--Unknown connection ID: 23-->
+            </Button>
+            <Button Name="BSTats" HorizontalAlignment="Center" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
+              <Border CornerRadius="3" BorderThickness="1">
+                <Border.Background>
+                  <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+                </Border.Background>
+                <Grid Width="24" Height="24">
+                  <fa:ImageAwesome Icon="LineChart" Foreground="#FFEBEBEB" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14" Width="15" />
+                </Grid>
+              </Border>
+              <!--Unknown connection ID: 24-->
+            </Button>
+            <!--Unknown connection ID: 21-->
+          </Grid>
+          <Button Name="BSERVER" HorizontalAlignment="Right" FontFamily="Gilroy" Grid.Column="1" FontSize="11" VerticalAlignment="Bottom" Margin="0,0,25,5" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Border CornerRadius="3" BorderThickness="1">
+              <Border.Background>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.Background>
+              <Grid>
+                <Label Name="LGo" Content="ПРИСОЕДИНИТЬСЯ">
+                  <!--Unknown connection ID: 26-->
+                </Label>
+              </Grid>
+            </Border>
+            <!--Unknown connection ID: 25-->
+          </Button>
+          <Button Name="BSERVER_PCF" HorizontalAlignment="Right" FontFamily="Gilroy" Grid.Column="1" FontSize="11" VerticalAlignment="Top" Margin="0,35,25,0" Visibility="Hidden" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Border CornerRadius="3" BorderThickness="1">
+              <Border.Background>
+                <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+              </Border.Background>
+              <Grid>
+                <Label Name="LPCF" Content="ПРОВЕРИТЬ МОДЫ ">
+                  <!--Unknown connection ID: 28-->
+                </Label>
+              </Grid>
+            </Border>
+            <!--Unknown connection ID: 27-->
+          </Button>
+          <!--Unknown connection ID: 3-->
+        </Grid>
+      </StackPanel>
+    </Grid>
+    <!--Unknown connection ID: 2-->
+  </Border>
+  <!--Unknown connection ID: 1-->
+</UserControl>

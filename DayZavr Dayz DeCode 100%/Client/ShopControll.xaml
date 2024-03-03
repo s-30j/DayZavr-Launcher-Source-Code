@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Client.ShopControll" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:fa="http://schemas.fontawesome.io/icons/" xmlns:ControlzEx="clr-namespace:ControlzEx;assembly=MahApps.Metro" xmlns:WPF="clr-namespace:LoadingIndicators.WPF;assembly=LoadingIndicators.WPF" x:Name="SHOPControll" Height="630" xmlns:client="clr-namespace:Client;assembly=DayZavr Dayz" Foreground="{x:Null}">
+  <Border Name="Border2" CornerRadius="5">
+    <Border.Background>
+      <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+    </Border.Background>
+    <Grid>
+      <StackPanel Name="SLoot" HorizontalAlignment="Left" Height="67" Margin="10,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BLOOT" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Foreground="#FF131313" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Source="/DayZavr Dayz;component/design/коробки.png" />
+          <!--Unknown connection ID: 4-->
+        </Button>
+        <Image Name="Lootline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 5-->
+        </Image>
+        <!--Unknown connection ID: 3-->
+      </StackPanel>
+      <StackPanel Name="SSet" HorizontalAlignment="Left" Height="67" Margin="77,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BSETS" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="AddressBookOutline" Source="/DayZavr Dayz;component/design/сет2.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          <!--Unknown connection ID: 7-->
+        </Button>
+        <Image Name="Setsline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 8-->
+        </Image>
+        <!--Unknown connection ID: 6-->
+      </StackPanel>
+      <StackPanel Name="SWeapon" HorizontalAlignment="Left" Height="67" Margin="144,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BWEAPON" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Foreground="#FF131313" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Source="/DayZavr Dayz;component/design/Weapon.png" Stretch="UniformToFill" />
+          <!--Unknown connection ID: 10-->
+        </Button>
+        <Image Name="Weaponline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 11-->
+        </Image>
+        <!--Unknown connection ID: 9-->
+      </StackPanel>
+      <StackPanel Name="SCar" HorizontalAlignment="Left" Height="67" Margin="211,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BCARS" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Margin="2,0" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="AddressBookOutline" Source="/DayZavr Dayz;component/design/машина.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          <!--Unknown connection ID: 13-->
+        </Button>
+        <Image Name="Carsline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 14-->
+        </Image>
+        <!--Unknown connection ID: 12-->
+      </StackPanel>
+      <StackPanel Name="SHeli" HorizontalAlignment="Left" Height="67" Margin="278,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BHeli" Margin="2,0" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="AddressBookOutline" Source="/DayZavr Dayz;component/design/Inventar.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" />
+          <!--Unknown connection ID: 16-->
+        </Button>
+        <Image Name="Heliline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 17-->
+        </Image>
+        <!--Unknown connection ID: 15-->
+      </StackPanel>
+      <StackPanel Name="SMask" HorizontalAlignment="Left" Height="67" Margin="345,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BMask" Margin="2,0" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="AddressBookOutline" Source="/DayZavr Dayz;component/design/GasMask.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          <!--Unknown connection ID: 19-->
+        </Button>
+        <Image Name="Maskline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 20-->
+        </Image>
+        <!--Unknown connection ID: 18-->
+      </StackPanel>
+      <StackPanel Name="SBase" HorizontalAlignment="Left" Height="67" Margin="412,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BBase" Margin="2,0" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="AddressBookOutline" Source="/DayZavr Dayz;component/design/Base.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          <!--Unknown connection ID: 22-->
+        </Button>
+        <Image Name="Baseline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 23-->
+        </Image>
+        <!--Unknown connection ID: 21-->
+      </StackPanel>
+      <StackPanel Name="SMedic" HorizontalAlignment="Left" Height="67" Margin="479,10,0,0" VerticalAlignment="Top" Width="62">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <Button Name="BMedic" Margin="2,0" VerticalAlignment="Top" Height="62" Style="{DynamicResource RoundedCorners}" Background="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="AddressBookOutline" Source="/DayZavr Dayz;component/design/Medic.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+          <!--Unknown connection ID: 25-->
+        </Button>
+        <Image Name="Medicline" Height="2" Margin="2,0" VerticalAlignment="Bottom" Source="/DayZavr Dayz;component/design/Layer LstWiew.png" Stretch="Fill">
+          <!--Unknown connection ID: 26-->
+        </Image>
+        <!--Unknown connection ID: 24-->
+      </StackPanel>
+      <Grid Name="GLIST" Margin="0,82,0,0">
+        <Panel.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Panel.Background>
+        <ListBox Name="BoxShop" ControlzEx:KeyboardNavigationEx.AlwaysShowFocusVisual="True" BorderBrush="#FF151515" VerticalContentAlignment="Stretch" Visibility="Hidden" Foreground="{x:Null}">
+          <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+              <WrapPanel Orientation="Horizontal" />
+            </ItemsPanelTemplate>
+          </ItemsControl.ItemsPanel>
+          <Control.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+          </Control.Background>
+          <FrameworkElement.Style>
+            <Style TargetType="{x:Type ListBox}">
+              <Style.BasedOn>
+                <Style TargetType="{x:Type ListBox}">
+                  <Setter Property="BorderThickness" Value="1" />
+                  <Setter Property="FrameworkElement.FocusVisualStyle" Value="{x:Null}" />
+                  <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                  <Setter Property="VerticalContentAlignment" Value="Center" />
+                  <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
+                  <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+                  <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+                  <Setter Property="ScrollViewer.PanningMode" Value="Both" />
+                  <Setter Property="UIElement.SnapsToDevicePixels" Value="True" />
+                  <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+                  <Setter Property="Template">
+                    <Setter.Value>
+                      <ControlTemplate TargetType="{x:Type ListBox}">
+                        <Border Name="Border" BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="{TemplateBinding Control.BorderThickness}" Background="{TemplateBinding Control.Background}">
+                          <ScrollViewer CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}" Focusable="False" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" Padding="{TemplateBinding Control.Padding}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}">
+                            <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                          </ScrollViewer>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                          <Trigger Property="ItemsControl.IsGrouping" Value="False">
+                            <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
+                          </Trigger>
+                        </ControlTemplate.Triggers>
+                      </ControlTemplate>
+                    </Setter.Value>
+                  </Setter>
+                  <Style.Triggers>
+                    <Trigger Property="IsEnabled" Value="False">
+                      <Setter Property="BorderBrush" Value="{DynamicResource GrayBrush9}" />
+                    </Trigger>
+                    <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="True">
+                      <Setter Property="ItemsPanel">
+                        <Setter.Value>
+                          <ItemsPanelTemplate>
+                            <VirtualizingStackPanel Orientation="Horizontal" IsItemsHost="True" />
+                          </ItemsPanelTemplate>
+                        </Setter.Value>
+                      </Setter>
+                      <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
+                    </Trigger>
+                  </Style.Triggers>
+                </Style>
+              </Style.BasedOn>
+            </Style>
+          </FrameworkElement.Style>
+          <!--Unknown connection ID: 28-->
+        </ListBox>
+        <!--Unknown connection ID: 27-->
+      </Grid>
+      <Button Name="BInfoShop" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,24,34,0" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Control.Background>
+          <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+        </Control.Background>
+        <fa:ImageAwesome Icon="InfoCircle" Height="20" Width="20" Foreground="#FFEBEBEB" />
+        <!--Unknown connection ID: 29-->
+      </Button>
+      <Grid Name="GInfoShop" HorizontalAlignment="Left" Height="438" VerticalAlignment="Top" Width="1076" Background="#FF1B1B1B" Visibility="Hidden">
+        <Button Name="BCloseShopInfo" Width="30" Margin="1036,10,10,178" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Foreground="{x:Null}" BorderBrush="{x:Null}">
+          <fa:ImageAwesome Icon="Close" Height="14" Width="14" Foreground="#FFEBEBEB" />
+          <!--Unknown connection ID: 31-->
+        </Button>
+        <TextBlock Name="TextW" Margin="0,136,0,0" FontFamily="Roboto Light" TextAlignment="Center" Height="19" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#FFEAEAEA" Text="Спавн техники : возле Вас не должно быть никаких построек и ровная площадка!" FontSize="13" FontWeight="Bold">
+          <TextBlock.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+          </TextBlock.Background>
+          <!--Unknown connection ID: 32-->
+        </TextBlock>
+        <TextBlock Name="TextSet" Margin="0,175,0,0" FontFamily="Roboto Light" TextAlignment="Center" Height="19" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#FFEAEAEA" Text="Спавн сетов : если у Вас не хватает места, лут будет выпадать при спавне на землю / пол!" FontSize="13" FontWeight="Bold">
+          <TextBlock.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+          </TextBlock.Background>
+          <!--Unknown connection ID: 33-->
+        </TextBlock>
+        <TextBlock Name="TextLoot" Margin="0,214,0,0" FontFamily="Roboto Light" TextAlignment="Center" Height="19" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#FFEAEAEA" Text="Спавн лута : если у Вас не хватает места, лут будет выпадать при спавне на землю / пол!" FontSize="13" FontWeight="Bold">
+          <TextBlock.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+          </TextBlock.Background>
+          <!--Unknown connection ID: 34-->
+        </TextBlock>
+        <TextBlock Name="TextBase" Margin="0,253,0,0" FontFamily="Roboto Light" TextAlignment="Center" Height="19" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="#FFEAEAEA" Text="Спавн наборов для строительства : если у Вас не хватает места, лут будет выпадать при спавне на землю/пол!" FontSize="13" FontWeight="Bold">
+          <TextBlock.Background>
+            <ImageBrush ImageSource="/DayZavr Dayz;component/design/p.png" />
+          </TextBlock.Background>
+          <!--Unknown connection ID: 35-->
+        </TextBlock>
+        <Image Name="imgWarning" Grid.Column="0" Source="/DayZavr Dayz;component/MessageBox/Warning.png" Stretch="None" Margin="505,50,507,170" HorizontalAlignment="Center" VerticalAlignment="Top">
+          <!--Unknown connection ID: 36-->
+        </Image>
+        <!--Unknown connection ID: 30-->
+      </Grid>
+    </Grid>
+    <!--Unknown connection ID: 2-->
+  </Border>
+  <!--Unknown connection ID: 1-->
+</UserControl>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="RZM.LOGO" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" xmlns:loadin="clr-namespace:LoadingIndicators.WPF;assembly=LoadingIndicators.WPF" x:Name="a" Title="LOGO" Height="318.647" Width="653.531" Topmost="True" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Visibility="Visible" xmlns:rzm="clr-namespace:RZM;assembly=DayZavr Dayz">
+  <Control.Background>
+    <ImageBrush />
+  </Control.Background>
+  <Grid Name="eval_b">
+    <Panel.Background>
+      <ImageBrush />
+    </Panel.Background>
+    <Image Name="eval_c" Source="/design/32_3.png" Stretch="Fill" Margin="17,13,17,33" Visibility="Hidden">
+      <UIElement.Effect>
+        <BlurEffect RenderingBias="Quality" Radius="0" />
+      </UIElement.Effect>
+      <!--Unknown connection ID: 3-->
+    </Image>
+    <Label Name="eval_d" Content="Loading..." HorizontalAlignment="Right" Margin="0,242,17,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Width="198" Foreground="#FF6A6A6A" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+      <UIElement.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform />
+          <SkewTransform />
+          <RotateTransform Angle="0.311" />
+          <TranslateTransform />
+        </TransformGroup>
+      </UIElement.RenderTransform>
+      <!--Unknown connection ID: 4-->
+    </Label>
+    <!--Unknown connection ID: 2-->
+  </Grid>
+  <!--Unknown connection ID: 1-->
+</Window>
